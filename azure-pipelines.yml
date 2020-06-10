@@ -8,7 +8,7 @@ pool:
 
 variables:
   Configuration: Release
-  LogDirectory: $(Build.ArtifactStagingDirectory)\logs
+  LogDirectory: $(Build.ArtifactStagingDirectory)/logs
 
 steps:
 
