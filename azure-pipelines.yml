@@ -13,7 +13,7 @@ variables:
 steps:
 
 - script: |
-    msbuild Xamarin.Firebase.Messaging.Repro/Xamarin.Firebase.Messaging.Repro.csproj -t:SignAndroidPackage -bl:$(LogDirectory)/msbuild.binlog
+    msbuild Xamarin.Firebase.Messaging.Repro/Xamarin.Firebase.Messaging.Repro.csproj -t:SignAndroidPackage -bl:$(LogDirectory)/msbuild.binlog -restore
   displayName: 'build'
 
 - task: CopyFiles@2
